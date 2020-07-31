@@ -31,10 +31,13 @@ ul {
 
 }
 
+.slide-container.animated {
+    transition: left .3s ease-in;
+}
+
 .slide {
     position: absolute;
     width: 100%;
-
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
@@ -54,6 +57,28 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
+    color: rgba(221, 221, 221, 0.849);
+    width: 20px;
+    height: 20px;
+    z-index: 20;
+    font-size: 30px;
 }
 
-#next {}
+#prev {
+    margin-left: -480px;
+}
+
+
+#next {
+    margin-left: 380px;
+}
+
+#prev:hover,
+#next:hover {
+    color: rgba(119, 115, 115, 0.7);
+}
+
+#prev.disabled,
+#next.disabled {
+    display: none;
+}
