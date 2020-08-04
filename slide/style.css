@@ -60,7 +60,7 @@ ul {
     color: rgba(221, 221, 221, 0.849);
     width: 20px;
     height: 20px;
-    z-index: 20;
+    z-index: 200;
     font-size: 30px;
 }
 
