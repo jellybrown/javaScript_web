@@ -1,0 +1,33 @@
+ul {
+    list-style: none;
+
+
+}
+
+
+.tab-menu {
+    width: 100%;
+    height: 80px;
+}
+
+
+.tab-menu li a {
+    display: inline-block;
+    float: left;
+    padding: 10px 20px;
+    margin-right: 20px;
+    color: rgb(175, 173, 173);
+    text-decoration: none;
+    background-color: #ddd;
+
+}
+
+.tab-menu li a.active {
+    background-color: #000;
+    color: #fff;
+}
+
+#tab-content>div {
+    padding-bottom: 40px;
+    display: none;
+}
