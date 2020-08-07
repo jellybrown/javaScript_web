@@ -1,3 +1,7 @@
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
 html,
 ul {
     list-style: none;
@@ -9,11 +13,13 @@ ul {
     position: relative;
     width: 100%;
     overflow: hidden;
+
 }
 
 .slide_container {
     width: 100%;
     position: absolute;
+    left: 0;
 
 }
 
@@ -59,4 +65,28 @@ ul {
 #prev.disabled,
 #next.disabled {
     display: none;
+}
+
+.pager {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.pager span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: inline-block;
+    text-indent: -9999em;
+    margin: 0 5px;
+}
+
+.pager span.active {
+    background-color: #000;
 }
